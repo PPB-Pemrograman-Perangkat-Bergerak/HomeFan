@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (toggleButton.isChecked() == true) {
-                    rotateAnimator.setDuration(SPEED[1]);
+                    rotateAnimator.setDuration(SPEED[seekBar.getProgress()]);
                     rotateAnimator.start();
                 } else {
                     rotateAnimator.end();
